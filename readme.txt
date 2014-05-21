@@ -1,4 +1,4 @@
-=== WP noFrame ===
+=== WP noFrame/noClickjacking ===
 
 Contributors:      RSPublishing
 Donate link:       https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UGF2HGFDWM4ME  
@@ -9,11 +9,11 @@ Stable tag:        0.7
 License:           GPLv2 or Later
 License URI: 	   http://www.gnu.org/licenses/gpl-2.0.html
 
-WP noFrame is a simple (yet) effective frame breaking plugin that protects your site content from being embedded into other sites. 
+WP noFrame/noClickjacking is a simple (yet) effective frame breaking plugin that protects your site content from being embedded into other sites. 
 
 == Description ==
 
-WP noFrame/noClickjacking is a simple (yet) effective frame breaking plugin that protects your site content from being embedded into other sites - defending you against clickjacking attacks.
+WP noFrame/noClickjacking is a simple (yet) effective frame breaking plugin that protects your site content from being embedded into other sites - effectively defending you against clickjacking attacks.
 
 This lightweight plugin will add the Header always append X-Frame-Options DENY instruction to your .htaccess file - where the DENY rule will prevent ALL domains from framing your content.
 
@@ -56,7 +56,8 @@ WP noFrame is a simple (yet) effective plugin that protects your site content fr
 
 WP noFrame adds the X-Frame-Options HTTP response header (DENY) instruction to your root .htaccess in order to prevent your site content from being embedded into other sites. 
 
-Why not just use Javascript?
+= Why not just use Javascript? =
+
 Simply because we believe they are easily bypassed. For example: the user disabled his Javascript! Furthermore, we have come to find that the JS code conflicts with the theme customization in WordPress.
 
 = Will this work on nginx servers? =
@@ -64,7 +65,7 @@ Simply because we believe they are easily bypassed. For example: the user disabl
 This plugin was specifically created for Apache based servers. However, the following line of code can be added to your nginx configuration: `add_header X-Frame-Options 
 SAMEORIGIN;`
 
-= What if I don't have server level access?=
+= What if I don't have server level access? =
 
 If you don't have server level access, you can add the following line of code between the `<head>` and `</head>` tag of your pages: `<meta http-equiv="X-FRAME-OPTIONS" content="DENY">`
 
