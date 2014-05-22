@@ -4,7 +4,7 @@
 Plugin Name: WP noFrame/noClickjacking
 Plugin URI:  http://securiilock.com
 Description: WP noFrame/noClickjacking is a simple (yet) effective frame breaking plugin that protects your online content from being embedded into other sites - effectively defending you against clickjacking attacks. Go to your <a href="options-general.php?page=wpnf_options">Settings -> WP noFrame/noClickjacking</a> for support.
-Version: 0.7
+Version: 0.8
 Author: Rynaldo Stoltz
 Author URI: http://securiilock.com
 License: GPLv2 or later
@@ -19,10 +19,10 @@ if(is_admin()) {
 
 function cons_menu() {
 
-	add_options_page('WP noFrame', 'WP noFrame', 'manage_options', 'wpnf_options', 'return_settings');
+	add_options_page('WP noFrame', 'WP noFrame', 'manage_options', 'wpnf_options', 'return_nf_config');
 }
 
-function return_settings() {
+function return_nf_config() {
 
 	require_once('inc/conf.php');
 }
