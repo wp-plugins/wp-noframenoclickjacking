@@ -2,14 +2,14 @@
 
 Contributors:      RSPublishing
 Donate link:       https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UGF2HGFDWM4ME  
-Tags:              iframe, copy protection, buster, content, protect, protection, copyright, theft, javascript, clickjacking, frame, content protection
+Tags:              iframe, copy protection, buster, content, protect, copyright, theft, javascript, clickjacking, frame, content protection
 Requires at least: 3.0
-Tested up to:      3.9.1
-Stable tag:        0.8
+Tested up to:      4.0
+Stable tag:        0.9
 License:           GPLv2 or Later
 License URI: 	   http://www.gnu.org/licenses/gpl-2.0.html
 
-WP noFrame/noClickjacking is a simple (yet) effective frame breaking plugin that protects your site content from being embedded into other sites. 
+WP noFrame/noClickjacking is a simple (yet) effective iframe breaking plugin that protects your site content from being embedded into other sites. Simply put - one that works! 
 
 == Description ==
 
@@ -40,7 +40,7 @@ Just email us at: support@securiilock.com / Email Subject : WP noFrame
 
 == Upgrade Notice ==
 
-none
+= Version 0.9 = 
 
 == Screenshots ==
 
@@ -89,5 +89,8 @@ __The instruction options__
 * First release version
 
 = 0.8 = 
-
 * fixed redeclare issue (conflicted with WP Content Copy Protection)
+
+= 0.9 = 
+* tested 4.0 compatibility 
+* general housekeeping

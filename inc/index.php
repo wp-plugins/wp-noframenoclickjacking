@@ -7,4 +7,4 @@
 ?>
 
 <br /><br />
-<center>Protect your valuable online content with <a href="http://www.securiilock.com/">WordPress Content Copy Protection Pro</a>. The complete content protection plugin for WordPress.</center>a
+<center>Protect your valuable text content, images and source code with <a href="http://www.securiilock.com/">WordPress Content Copy Protection Pro</a>. The complete content protection solution for WordPress.</center>
