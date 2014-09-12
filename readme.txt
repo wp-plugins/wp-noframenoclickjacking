@@ -9,7 +9,7 @@ Stable tag:        0.9
 License:           GPLv2 or Later
 License URI: 	   http://www.gnu.org/licenses/gpl-2.0.html
 
-WP noFrame/noClickjacking is a simple (yet) effective iframe breaking plugin that protects your site content from being embedded into other sites. Simply put - one that works! 
+WP noFrame/noClickjacking is a simple (yet) effective iframe breaking plugin that protects your site content from being embedded into other sites. 
 
 == Description ==
 
