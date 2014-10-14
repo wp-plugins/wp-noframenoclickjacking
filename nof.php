@@ -1,16 +1,33 @@
 <?php
 
 /*
-Plugin Name: WP noFrame/noClickjacking
-Plugin URI:  http://yooplugins.com/
-Description: WP noFrame/noClickjacking is a simple (yet) effective iframe breaking plugin that protects your online content from being embedded into other sites - effectively defending you against clickjacking attacks. Go to your <a href="options-general.php?page=wpnf_options">Settings -> WP noFrame/noClickjacking</a> for support.
-Version: 1.0
-Author: Rynaldo Stoltz
-Author URI: http://yooplugins.com/
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-  
-*/
+  Plugin Name: WP noFrame/noClickjacking
+  Plugin URI:  http://yooplugins.com/
+  Description: WP noFrame/noClickjacking is a simple (yet) effective iframe breaking plugin that protects your online content from being embedded into other sites - effectively defending you against clickjacking attacks. Go to your <a href="options-general.php?page=wpnf_options">Settings -> WP noFrame/noClickjacking</a> for support.
+  Version: 1.0
+  Author: Rynaldo Stoltz
+  Author URI: http://yooplugins.com/
+  License: GPLv2 or later
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+  */
+
+/*
+  Copyright 2013/2014  Rynaldo Stoltz  (email : support@yooplugins.com)
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ */
 
 if(is_admin()) {
 	add_action('admin_menu', 'cons_menu');
