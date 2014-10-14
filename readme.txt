@@ -40,7 +40,7 @@ Just email us at: support@yooplugins.com / Email Subject : WP noFrame or visit u
 
 == Upgrade Notice ==
 
-= Version 0.9 = 
+= Version 1.0 = 
 
 == Screenshots ==
 

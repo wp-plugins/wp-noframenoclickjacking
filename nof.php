@@ -5,7 +5,7 @@
   Plugin URI:  http://yooplugins.com/
   Description: WP noFrame/noClickjacking is a simple (yet) effective iframe breaking plugin that protects your online content from being embedded into other sites - effectively defending you against clickjacking attacks. Go to your <a href="options-general.php?page=wpnf_options">Settings -> WP noFrame/noClickjacking</a> for support.
   Version: 1.0
-  Author: Rynaldo Stoltz
+  Author: RSPublishing
   Author URI: http://yooplugins.com/
   License: GPLv2 or later
   License URI: http://www.gnu.org/licenses/gpl-2.0.html
