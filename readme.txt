@@ -2,10 +2,10 @@
 
 Contributors:      RSPublishing
 Donate link:       https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UGF2HGFDWM4ME  
-Tags:              iframe, copy protection, buster, content, protect, copyright, theft, javascript, clickjacking, frame, content protection
+Tags:              iframe, copy protection, frame breaker, content, protect, copyright, theft, clickjacking, frame, content protection, bust, frame buster
 Requires at least: 3.0
 Tested up to:      4.0
-Stable tag:        0.9
+Stable tag:        1.0
 License:           GPLv2 or Later
 License URI: 	   http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,7 +36,7 @@ This is a lightweight plugin - simply install and leave. Try it for yourself!
 
 == Feedback, Questions, Help, Bug Reporting, and Suggestions ==
 
-Just email us at: support@securiilock.com / Email Subject : WP noFrame
+Just email us at: support@yooplugins.com / Email Subject : WP noFrame or visit us at [YOOPlugins](http://yooplugins.com/)
 
 == Upgrade Notice ==
 
@@ -94,3 +94,7 @@ __The instruction options__
 = 0.9 = 
 * tested 4.0 compatibility 
 * general housekeeping
+
+= 1.0 =
+* general housekeeping
+* url changes and support email changes

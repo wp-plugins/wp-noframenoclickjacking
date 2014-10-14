@@ -2,28 +2,25 @@
 
 /*
 Plugin Name: WP noFrame/noClickjacking
-Plugin URI:  http://securiilock.com
-Description: WP noFrame/noClickjacking is a simple (yet) effective frame breaking plugin that protects your online content from being embedded into other sites - effectively defending you against clickjacking attacks. Go to your <a href="options-general.php?page=wpnf_options">Settings -> WP noFrame/noClickjacking</a> for support.
-Version: 0.9
+Plugin URI:  http://yooplugins.com/
+Description: WP noFrame/noClickjacking is a simple (yet) effective iframe breaking plugin that protects your online content from being embedded into other sites - effectively defending you against clickjacking attacks. Go to your <a href="options-general.php?page=wpnf_options">Settings -> WP noFrame/noClickjacking</a> for support.
+Version: 1.0
 Author: Rynaldo Stoltz
-Author URI: http://securiilock.com
+Author URI: http://yooplugins.com/
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
   
 */
 
 if(is_admin()) {
-
 	add_action('admin_menu', 'cons_menu');
 }
 
 function cons_menu() {
-
 	add_options_page('WP noFrame', 'WP noFrame', 'manage_options', 'wpnf_options', 'return_nf_config');
 }
 
 function return_nf_config() {
-
 	require_once('inc/conf.php');
 }
 
@@ -33,7 +30,6 @@ register_activation_hook( WP_PLUGIN_DIR . '/wp-nof/nof.php', array($wpnof, 'acti
 register_deactivation_hook( WP_PLUGIN_DIR . '/wp-nof/nof.php', array($wpnof, 'deactivate') );
 
 class wpnof {
-
 	public function activate() {
                 $this->htac_incl();
 	}
@@ -46,9 +42,9 @@ class wpnof {
 
                 $absolutePath = ABSPATH;
 				$content .= "\n" . "\n";
-                $content .= '# WP noFrame by Rynaldo Stoltz Starts - http://securiilock.com' . "\n";
+                $content .= '# WP noFrame by Rynaldo Stoltz Starts - http://yooplugins.com/' . "\n";
 				$content .= 'Header always append X-Frame-Options DENY' . "\n";
-                $content .= '# WP noFrame by Rynaldo Stoltz Ends - http://securiilock.com' . "\n" . "\n";
+                $content .= '# WP noFrame by Rynaldo Stoltz Ends - http://yooplugins.com/' . "\n" . "\n";
                 file_put_contents($absolutePath . '/.htaccess', $content, FILE_APPEND | FILE_TEXT);	
         }
 
