@@ -1,10 +1,10 @@
 <?php
 
 /*
-  Plugin Name: WP noFrame/noClickjacking
+  Plugin Name: WP noFrames for Copy Protection
   Plugin URI:  http://yooplugins.com/
-  Description: WP noFrame/noClickjacking is a simple (yet) effective iframe breaking plugin that protects your online content from being embedded into other sites - effectively defending you against clickjacking attacks. Go to your <a href="options-general.php?page=wpnf_options">Settings -> WP noFrame/noClickjacking</a> for support.
-  Version: 1.0
+  Description: WP noFrames for Copy Protection is a simple (yet) effective iframe breaking plugin that protects your online content from being embedded into other sites and, in addition will also defend against clickjacking attacks. Go to your <a href="options-general.php?page=wpnf_options">Settings -> WP noFrame/noClickjacking</a> for support.
+  Version: 1.1
   Author: RSPublishing
   Author URI: http://yooplugins.com/
   License: GPLv2 or later
@@ -12,7 +12,7 @@
   */
 
 /*
-  Copyright 2013/2014  Rynaldo Stoltz  (email : support@yooplugins.com)
+  Copyright 2014/2015  Rynaldo Stoltz  (email : rcstoltz@gmail.com)
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -62,7 +62,7 @@ class wpnof {
                 $content .= '# WP noFrame by Rynaldo Stoltz Starts - http://yooplugins.com/' . "\n";
 				$content .= 'Header always append X-Frame-Options DENY' . "\n";
                 $content .= '# WP noFrame by Rynaldo Stoltz Ends - http://yooplugins.com/' . "\n" . "\n";
-                file_put_contents($absolutePath . '/.htaccess', $content, FILE_APPEND | FILE_TEXT);	
+                file_put_contents($absolutePath . '/.htaccess', $content, FILE_APPEND | FILE_TEXT);
         }
 
 		 public function htac_ent_rem() {
