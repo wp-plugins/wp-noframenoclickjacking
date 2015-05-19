@@ -4,7 +4,7 @@
   Plugin Name: WP noFrames for Copy Protection
   Plugin URI:  http://yooplugins.com/
   Description: WP noFrames for Copy Protection is a simple (yet) effective iframe breaking plugin that protects your online content from being embedded into other sites and, in addition will also defend against clickjacking attacks. Go to your <a href="options-general.php?page=wpnf_options">Settings -> WP noFrame/noClickjacking</a> for support.
-  Version: 1.1
+  Version: 1.2
   Author: RSPublishing
   Author URI: http://yooplugins.com/
   License: GPLv2 or later

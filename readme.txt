@@ -1,19 +1,19 @@
-=== WP noFrames for Copy Protection ===
+=== WP no-Frames for Copy Protection ===
 
 Contributors:      RSPublishing
 Donate link:       https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UGF2HGFDWM4ME  
 Tags:              iframe, copy protection, frame breaker, content, protect, copyright, theft, clickjacking, frame, content protection, frame buster, X-Frame
 Requires at least: 3.0
-Tested up to:      4.1.2
-Stable tag:        1.1
+Tested up to:      4.2.2
+Stable tag:        1.2
 License:           GPLv2 or Later
 License URI: 	   http://www.gnu.org/licenses/gpl-2.0.html
 
-WP noFrames for Copy Protection is a simple, yet effective iframe breaking plugin that protects your site content from being embedded into other sites. 
+WP no-Frames for Copy Protection is a simple, yet effective iframe breaking plugin that protects your site content from being embedded into other sites. 
 
 == Description ==
 
-WP noFrames for Copy Protection is a simple, yet effective frame breaking plugin that protects your site content from being embedded into other sites - effectively defending you against clickjacking attacks.
+WP no-Frames for Copy Protection is a simple, yet effective frame breaking plugin that protects your site content from being embedded into other sites - effectively defending you against clickjacking attacks.
 
 This lightweight plugin will add the Header always append X-Frame-Options DENY instruction to your .htaccess file - where the DENY rule will prevent ALL domains from framing your content.
 
@@ -27,6 +27,8 @@ The DENY rule is simply replaced by either one of the aforementioned headers.
 
 This is a lightweight plugin - simply install and leave. Try it for yourself!
 
+The WP no-Frames for Copy Protection plugin is maintained by [YOOPlugins.com](http://yooplugins.com/)
+
 == Installation ==
 
 1. Download the .zip file
@@ -36,11 +38,11 @@ This is a lightweight plugin - simply install and leave. Try it for yourself!
 
 == Feedback, Questions, Help, Bug Reporting, and Suggestions ==
 
-Just email us at: rcstoltz@gmail.com / Email Subject : WP noFrames for Copy Protection or visit us at [YOOPlugins](http://yooplugins.com/)
+Just email us at: rcstoltz@gmail.com / Email Subject : WP no-Frames for Copy Protection or visit us at [YOOPlugins](http://yooplugins.com/)
 
 == Upgrade Notice ==
 
-= Version 1.1 = 
+= Version 1.2 = 
 
 == Screenshots ==
 
@@ -105,3 +107,9 @@ __The instruction options__
 * updated version number
 * general housekeeping
 * added icons
+
+= 1.2 =
+* tested compatibility with core 4.2.2
+* added banner and icon assets
+* updated version number
+* general housekeeping
