@@ -1,33 +1,33 @@
-=== WP no-Frames for Copy Protection ===
+=== WP no-iFrames (Content Protection) ===
 
 Contributors:      RSPublishing
 Donate link:       https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UGF2HGFDWM4ME  
-Tags:              iframe, copy protection, frame breaker, content, protect, copyright, theft, clickjacking, frame, content protection, frame buster, X-Frame
+Tags:              iframe, frame breaker, protect, copyright, theft, clickjacking, frame, content protection, frame buster, X-Frame, iframe buster, iframes
 Requires at least: 3.0
 Tested up to:      4.2.2
-Stable tag:        1.2
+Stable tag:        1.3
 License:           GPLv2 or Later
 License URI: 	   http://www.gnu.org/licenses/gpl-2.0.html
 
-WP no-Frames for Copy Protection is a simple, yet effective iframe breaking plugin that protects your site content from being embedded into other sites. 
+WP no-iFrames (Content Protection) is a simple, yet effective iframe breaking plugin that protects your site content from being embedded into other sites. 
 
 == Description ==
 
-WP no-Frames for Copy Protection is a simple, yet effective frame breaking plugin that protects your site content from being embedded into other sites - effectively defending you against clickjacking attacks.
+WP no-iFrames (Content Protection) is a simple, yet effective iframe breaking plugin that will protect your site content from being embedded into other sites - effectively defending you against clickjacking attacks.
 
-This lightweight plugin will add the Header always append X-Frame-Options DENY instruction to your .htaccess file - where the DENY rule will prevent ALL domains from framing your content.
+This lightweight plugin will add the Header always append X-Frame-Options SAMEORIGIN rule to your root .htaccess file - where the SAMEORIGIN rule will allow embeds only from YOUR site and prevent embeds from ANY other domains.
 
 The X-Frame-Options headers are however, available in 3 flavors (should you wish to not use the DENY rule):
 
-1. DENY: will prevent ALL domains from framing the content
-2. SAMEORIGIN: only allows the current domain to frame the content
+1. DENY: will prevent ALL domains from framing the content (including your own)
+2. SAMEORIGIN: only allows the current domain (your own) to frame the content
 3. ALLOW-FROM uri: which only allows a specified uri to frame the content
 
-The DENY rule is simply replaced by either one of the aforementioned headers.
+The SAMEORIGIN rule is simply replaced by either one of the aforementioned headers and can be done directly in your root .htaccess file
 
 This is a lightweight plugin - simply install and leave. Try it for yourself!
 
-The WP no-Frames for Copy Protection plugin is maintained by [YOOPlugins.com](http://yooplugins.com/)
+The WP no-iFrames (Content Protection) plugin is maintained by [YOOPlugins.com](http://yooplugins.com/) and [WP Emergency Room](http://wpemergencyroom.com/)
 
 == Installation ==
 
@@ -38,29 +38,29 @@ The WP no-Frames for Copy Protection plugin is maintained by [YOOPlugins.com](ht
 
 == Feedback, Questions, Help, Bug Reporting, and Suggestions ==
 
-Just email us at: rcstoltz@gmail.com / Email Subject : WP no-Frames for Copy Protection or visit us at [YOOPlugins](http://yooplugins.com/)
+Just email us at: rcstoltz@gmail.com / Email Subject : WP no-iFrames (Content Protection) or visit us at [YOOPlugins](http://yooplugins.com/)
 
 == Upgrade Notice ==
 
-= Version 1.2 = 
+= Version 1.3 = 
 
 == Screenshots ==
 
-1. WP noFrame Header Output Test
+1. WP no-iFrames Header Output Test
 
 == Frequently Asked Questions ==
 
-= What is WP noFrame? =
+= What is WP no-iFrames (Content Protection)? =
 
-WP noFrame is a simple (yet) effective plugin that protects your site content from being embedded into other sites - defending you against clickjacking attacks. 
+WP no-iFrames (Content Protection) is a simple (yet) effective plugin that protects your site content from being embedded into other sites - defending you against clickjacking attacks. 
 
-= What does WP noFrame do? =
+= What does WP no-iFrames (Content Protection) do? =
 
-WP noFrame adds the X-Frame-Options HTTP response header (DENY) instruction to your root .htaccess in order to prevent your site content from being embedded into other sites. 
+WP noFrame adds the X-Frame-Options HTTP response header (SAMEORIGIN) instruction to your root .htaccess in order to prevent your site content from being embedded into other sites (with the exception of your own). 
 
 = Why not just use Javascript? =
 
-Simply because we believe they are easily bypassed. For example: the user disabled his Javascript! Furthermore, we have come to find that the JS code conflicts with the theme customization in WordPress.
+Simply because JS is easily bypassed. For example: the user disabled his Javascript! Furthermore, we have come to find that the JS code conflicts with the theme customization in WordPress.
 
 = Will this work on nginx servers? =
 
@@ -113,3 +113,8 @@ __The instruction options__
 * added banner and icon assets
 * updated version number
 * general housekeeping
+
+= 1.3 =
+* changed DENY rule to SAMEORIGIN rule as some users need embeds on own domain
+* name change (more relavant in search terms)
+* keywords changes and readme update

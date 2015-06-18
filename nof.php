@@ -1,10 +1,10 @@
 <?php
 
 /*
-  Plugin Name: WP noFrames for Copy Protection
+  Plugin Name: WP no-iFrames (Content Protection)
   Plugin URI:  http://yooplugins.com/
-  Description: WP noFrames for Copy Protection is a simple (yet) effective iframe breaking plugin that protects your online content from being embedded into other sites and, in addition will also defend against clickjacking attacks. Go to your <a href="options-general.php?page=wpnf_options">Settings -> WP noFrame/noClickjacking</a> for support.
-  Version: 1.2
+  Description: WP no-iFrames (Content Protection) is a simple (yet) effective iframe breaking plugin that protects your online content from being embedded into other sites and, in addition will also defend against clickjacking attacks. Go to your <a href="options-general.php?page=wpnf_options">Settings -> WP no-iFrame/no-Clickjacking</a> for support.
+  Version: 1.3
   Author: RSPublishing
   Author URI: http://yooplugins.com/
   License: GPLv2 or later
@@ -34,7 +34,7 @@ if(is_admin()) {
 }
 
 function cons_menu() {
-	add_options_page('WP noFrame', 'WP noFrame', 'manage_options', 'wpnf_options', 'return_nf_config');
+	add_options_page('WP no-iFrames', 'WP no-iFrames', 'manage_options', 'wpnf_options', 'return_nf_config');
 }
 
 function return_nf_config() {
@@ -59,9 +59,9 @@ class wpnof {
 
                 $absolutePath = ABSPATH;
 				$content .= "\n" . "\n";
-                $content .= '# WP noFrame by Rynaldo Stoltz Starts - http://yooplugins.com/' . "\n";
-				$content .= 'Header always append X-Frame-Options DENY' . "\n";
-                $content .= '# WP noFrame by Rynaldo Stoltz Ends - http://yooplugins.com/' . "\n" . "\n";
+                $content .= '# WP no-iFrames by Rynaldo Stoltz Starts - http://yooplugins.com/' . "\n";
+				$content .= 'Header always append X-Frame-Options SAMEORIGIN' . "\n";
+                $content .= '# WP no-iFrames by Rynaldo Stoltz Ends - http://yooplugins.com/' . "\n" . "\n";
                 file_put_contents($absolutePath . '/.htaccess', $content, FILE_APPEND | FILE_TEXT);
         }
 
